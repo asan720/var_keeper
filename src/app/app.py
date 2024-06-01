@@ -39,6 +39,7 @@ def init_db():
     except Error as e:
         print('Failure', e)
  
+
  
 app = Flask(__name__)
  
@@ -75,3 +76,4 @@ def set(var_name):
 if __name__ == "__main__":
     init_db()
     app.run(debug=True, host='0.0.0.0')
+
